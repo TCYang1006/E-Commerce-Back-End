@@ -6,50 +6,59 @@ const { Category, Product } = require('../../models');
 router.get('/api/categories', (req, res) => {
   // find all categories
   // be sure to include its associated Products
-  Post.findAll({}).then(dbCategories => {
+  Category.findAll({
+    include: [dbProduct]
+  }).then(dbCategories => {
     res.json(dbCategories);
-  })
-
+  });
 });
 
 router.get('/api/category/:id', (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
-  Post.findAll({
+  Category.findOne({
     where: {
       id: req.params.id
-    }
-  }).then((dbCategories) => res.json(dbCategories))
+    },
+    include:
+      [dbProduct]
+  }).then((dbCategories) => {
+    res.json(dbCategories);
+  });
 });
 
 router.post('/api/category', (req, res) => {
   // create a new category
-  Post.create({
+  Category.create({
     where: {
-      title: req.body.title,
-      body: req.body.body,
-      category: req.body.category
+      id: req.body.id,
+      category_name: req.body.category_name
     }
-  }).then(dbCategories => res.json(dbCategories))
+  }).then(dbCategories => {
+    res.json(dbCategories);
+  });
 });
 
 router.put('/api/category/:id', (req, res) => {
   // update a category by its `id` value
-  Post.update({
+  Category.update({
     where: {
       id: req.params.id
     }
-  }).then(dbCategories => res.json(dbCategories))
+  }).then(dbCategories => {
+    res.json(dbCategories);
+  });
 });
 
 router.delete('/api/category/:id', (req, res) => {
   // delete a category by its `id` value
-  Post.destroy({
+  Category.destroy({
     where: {
       id: req.params.id
     }
-  }).then(dbCategories => res.json(dbCategories))
-
+  }).then(dbCategories => {
+    res.json(dbCategories);
+  });
 });
 
 module.exports = router;
