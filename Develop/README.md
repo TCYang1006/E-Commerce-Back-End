@@ -22,10 +22,10 @@ c.  dotenv
 
 ## Usage:
 The project uses ecommerce_db.  Ecommerce_db is seeded by the following:
-a.  category-seeds
-b.  product-seeds
-c.  product-tag-seeds
-d.  tag-seeds
+a.  Category-seeds
+b.  Product-seeds
+c.  Product-tag-seeds
+d.  Tag-seeds
 
 Create ecommerce_db in MySQL command prompt and seed the database by running "npm run seed" (click on the image/link for a video reference)
 
@@ -33,6 +33,26 @@ Create ecommerce_db in MySQL command prompt and seed the database by running "np
 
 ## Tests:
 To run this project, type "npm start" at the command prompt (quotation not required).
+
+Video to get all Categories, Products and Tags
+
+
+
+Video to get single category, Product and Tag
+
+
+
+Video to Post, Put and Delete for categories
+
+
+
+Video to Post, Put and Delete for Products
+
+
+
+Video to Post, Put and Delete for Tags
+
+
 
 ## Questions:
 Github profile:[TCYang1006](https://github.com/TCYang1006)
