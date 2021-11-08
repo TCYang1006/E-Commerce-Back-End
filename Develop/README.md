@@ -31,6 +31,8 @@ Create ecommerce_db in MySQL command prompt and seed the database by running "np
 [![NPM RUN SEED](https://img.youtube.com/vi/--b-9HrKK6w/0.jpg)](./assets/videos/NPM-RUN-SEED.webm)
 [![NPM RUN SEED](https://img.youtube.com/vi/--b-9HrKK6w/0.jpg)](<"https://giphy.com/embed/KnfNdb4Ifv1kWQ4XuU")
 
+<iframe src="https://giphy.com/embed/KnfNdb4Ifv1kWQ4XuU" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/KnfNdb4Ifv1kWQ4XuU">via GIPHY</a></p>
+
 ## Tests:
 To run this project, type "npm start" at the command prompt (quotation not required).
 
