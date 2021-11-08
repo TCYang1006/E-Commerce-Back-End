@@ -28,7 +28,6 @@ c.  product-tag-seeds
 d.  tag-seeds
 
 Create ecommerce_db in MySQL command prompt and seed the database by running "npm run seed" (view the video for reference)
-./assets/videos/NPM-RUN-SEED.webm
 
 ## Tests:
 To run this project, type "npm start" at the command prompt (quotation not required).
