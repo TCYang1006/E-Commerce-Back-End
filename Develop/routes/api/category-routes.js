@@ -7,9 +7,9 @@ router.get('/api/categories', (req, res) => {
   // find all categories
   // be sure to include its associated Products
   Category.findAll({
-    include: [dbProduct]
-  }).then(dbCategories => {
-    res.json(dbCategories);
+    include: [Product]
+  }).then(Category => {
+    res.json(Category);
   });
 });
 
@@ -21,9 +21,9 @@ router.get('/api/category/:id', (req, res) => {
       id: req.params.id
     },
     include:
-      [dbProduct]
-  }).then((dbCategories) => {
-    res.json(dbCategories);
+      [Product]
+  }).then((Category) => {
+    res.json(Category);
   });
 });
 
@@ -34,8 +34,8 @@ router.post('/api/category', (req, res) => {
       id: req.body.id,
       category_name: req.body.category_name
     }
-  }).then(dbCategories => {
-    res.json(dbCategories);
+  }).then(Category => {
+    res.json(Category);
   });
 });
 
@@ -45,20 +45,13 @@ router.put('/api/category/:id', (req, res) => {
     where: {
       id: req.params.id
     }
-  }).then(dbCategories => {
-    res.json(dbCategories);
+  }).then(Category => {
+    res.json(Category);
   });
 });
 
 router.delete('/api/category/:id', (req, res) => {
   // delete a category by its `id` value
-  Category.destroy({
-    where: {
-      id: req.params.id
-    }
-  }).then(dbCategories => {
-    res.json(dbCategories);
-  });
 });
 
 module.exports = router;

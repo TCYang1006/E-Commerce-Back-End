@@ -7,9 +7,9 @@ router.get('/api/tags', (req, res) => {
   // find all tags
   // be sure to include its associated Product data
   Tag.findAll({
-    include: [dbProduct]
-  }).then(dbTags =>{
-    res.json(dbTags);
+    include: [Product]
+  }).then(Tag =>{
+    res.json(Tag);
   })
 });
 
@@ -20,9 +20,9 @@ router.get('/api/tag/:id', (req, res) => {
     where: {
       id: req.params.id
     },
-    include: [dbProduct]
-  }).then(dbTags =>{
-    res.json(dbTags);
+    include: [Product]
+  }).then(Tag =>{
+    res.json(Tag);
   })
 });
 
@@ -33,8 +33,8 @@ router.post('/api/tag', (req, res) => {
       id: req.body.id,
       tag_name: req.body.tag_name
     }
-  }).then(dbTags => {
-    res.json(dbTags);
+  }).then(Tag => {
+    res.json(Tag);
   });
 });
 
@@ -44,8 +44,8 @@ router.put('/api/tag/:id', (req, res) => {
     where: {
       id: req.params.id
     }
-  }).then(dbTags => {
-    res.json(dbTags);
+  }).then(Tag => {
+    res.json(Tag);
   });
 });
 
@@ -55,8 +55,8 @@ router.delete('/api/tag/:id', (req, res) => {
     where: {
       id: req.params.id
     }
-  }).then(dbTags => {
-    res.json(dbTags);
+  }).then(Tag => {
+    res.json(Tag);
   });
 });
 

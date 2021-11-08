@@ -8,10 +8,10 @@ router.get('/api/products', (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
   Product.findAll({
-    include: [dbCategory],
-    include: [dbTag]
-  }).then(dbProducts => {
-    res.json(dbProducts);
+    include: [Category],
+    include: [Tag]
+  }).then(Product => {
+    res.json(Product);
   })
 });
 
@@ -23,10 +23,10 @@ router.get('/api/product/:id', (req, res) => {
     where: {
       id: req.params.id
     },
-    include: [dbCategory],
-    include: [dbTag]
-  }).then((dbProducts) => {
-    res.json(dbProducts);
+    include: [Category],
+    include: [Tag]
+  }).then((Product) => {
+    res.json(Product);
   });
 });
 
@@ -114,8 +114,8 @@ router.delete('/:id', (req, res) => {
     where: {
       id: req.params.id
     }
-  }).then(dbProducts => {
-    res.json(dbProducts);
+  }).then(Product => {
+    res.json(Product);
   });
 });
 
