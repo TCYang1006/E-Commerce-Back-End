@@ -12,20 +12,28 @@ Build the back end for an e-commerce site using a working Express.js API and con
 ### Contents
 1.  [Installation](#installation)
 2.  [Usage](#usage)
-3.  [Contributing](#contributing)
-4.  [Tests](#tests)
+3.  [Tests](#tests)
 
 ## Installation:  
-To run this project, you'll need to install npm, sequelize and dotenv.
+To run this project, you'll need to install the following:
+a.  npm
+b.  sequelize
+c.  dotenv
 
 ## Usage:
-The project uses ecommerce_db.
+The project uses ecommerce_db.  Ecommerce_db is seeded by the following:
+a.  category-seeds
+b.  product-seeds
+c.  product-tag-seeds
+d.  tag-seeds
 
-## Contributing:
-None
+Create ecommerce_db in MySQL command prompt and seed the database by running "npm run seed" (view the video for reference)
+<video>
+<source src="./assets/video/NPM-RUN-SEED.webm">
+</video>
 
 ## Tests:
-To run this project, type "node index.js" or "node index" at the command prompt (quotation marks are not required)
+To run this project, type "npm start" at the command prompt (quotation not required).
 
 ## Questions:
 Github profile:[TCYang1006](https://github.com/TCYang1006)
