@@ -35,23 +35,22 @@ Create ecommerce_db in MySQL command prompt and seed the database by running "np
 To run this project, type "npm start" at the command prompt (quotation not required).
 
 Video to get all Categories, Products and Tags
-
-
+[![NPM CAT PROD TAG](https://pngtree.com/so/play)](https://drive.google.com/file/d/1BlFOZMRRo-ZdndUXuTUmdhi-LZS_C-91/preview)
 
 Video to get single category, Product and Tag
+[![NPM CAT PROD TAG](https://pngtree.com/so/play)](https://drive.google.com/file/d/1MjnLUtF-phxnBcnmyX17BHFYi7dwqT55/preview)
 
 
-
-Video to Post, Put and Delete for categories
-
-
-
-Video to Post, Put and Delete for Products
+Video to Create, Update and Delete categories
+[![NPM CAT PROD TAG](https://pngtree.com/so/play)](https://drive.google.com/file/d/1uOd66LHU0FEs61z2Heusw98Qzlf0x4Pj/preview)
 
 
+Video to Create, Update and Delete Products
+[![NPM CAT PROD TAG](https://pngtree.com/so/play)](https://drive.google.com/file/d/1lU3M-Z850S4H5FHaDCUXLpyNBXKszZt4/preview)
 
-Video to Post, Put and Delete for Tags
 
+Video to Create, Update and Delete Tags
+[![NPM CAT PROD TAG](https://pngtree.com/so/play)](https://drive.google.com/file/d/1zEvVoKhdmjDCBp93o7GlEhOQblg2hXwR/preview)
 
 
 ## Questions:
