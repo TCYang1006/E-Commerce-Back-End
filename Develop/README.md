@@ -29,28 +29,33 @@ d.  Tag-seeds
 
 Create ecommerce_db in MySQL command prompt and seed the database by running "npm run seed" (click on the image/link for a video reference)
 
-[![NPM RUN SEED](https://img.youtube.com/vi/--b-9HrKK6w/0.jpg)](https://drive.google.com/file/d/1ZgPBzD6tnL5kSkQBCVdCYqyoblsWC3wg/preview)
+[![NPM RUN SEED](https://pacificequitygroup.net/wp-content/uploads/2017/01/video-player-placeholder-768x356.png)](https://drive.google.com/file/d/1ZgPBzD6tnL5kSkQBCVdCYqyoblsWC3wg/preview)
 
 ## Tests:
 To run this project, type "npm start" at the command prompt (quotation not required).
 
 Video to get all Categories, Products and Tags
-[![NPM CAT PROD TAG](.assets/images/play.jpg)](https://drive.google.com/file/d/1BlFOZMRRo-ZdndUXuTUmdhi-LZS_C-91/preview)
+
+[![NPM CAT PROD TAG](https://pacificequitygroup.net/wp-content/uploads/2017/01/video-player-placeholder-768x356.png)](https://drive.google.com/file/d/1BlFOZMRRo-ZdndUXuTUmdhi-LZS_C-91/preview)
 
 Video to get single category, Product and Tag
-[![NPM CAT PROD TAG](https://pngtree.com/so/play)](https://drive.google.com/file/d/1MjnLUtF-phxnBcnmyX17BHFYi7dwqT55/preview)
+
+[![NPM SINGLE](https://pacificequitygroup.net/wp-content/uploads/2017/01/video-player-placeholder-768x356.png)](https://drive.google.com/file/d/1MjnLUtF-phxnBcnmyX17BHFYi7dwqT55/preview)
 
 
 Video to Create, Update and Delete categories
-[![NPM CAT PROD TAG](https://pngtree.com/so/play)](https://drive.google.com/file/d/1uOd66LHU0FEs61z2Heusw98Qzlf0x4Pj/preview)
+
+[![NPM CAT](https://pacificequitygroup.net/wp-content/uploads/2017/01/video-player-placeholder-768x356.png)](https://drive.google.com/file/d/1uOd66LHU0FEs61z2Heusw98Qzlf0x4Pj/preview)
 
 
 Video to Create, Update and Delete Products
-[![NPM CAT PROD TAG](https://pngtree.com/so/play)](https://drive.google.com/file/d/1lU3M-Z850S4H5FHaDCUXLpyNBXKszZt4/preview)
+
+[![NPM PROD](https://pacificequitygroup.net/wp-content/uploads/2017/01/video-player-placeholder-768x356.png)](https://drive.google.com/file/d/1lU3M-Z850S4H5FHaDCUXLpyNBXKszZt4/preview)
 
 
 Video to Create, Update and Delete Tags
-[![NPM CAT PROD TAG](https://pngtree.com/so/play)](https://drive.google.com/file/d/1zEvVoKhdmjDCBp93o7GlEhOQblg2hXwR/preview)
+
+[![NPM TAG](https://pacificequitygroup.net/wp-content/uploads/2017/01/video-player-placeholder-768x356.png)](https://drive.google.com/file/d/1zEvVoKhdmjDCBp93o7GlEhOQblg2hXwR/preview)
 
 
 ## Questions:
