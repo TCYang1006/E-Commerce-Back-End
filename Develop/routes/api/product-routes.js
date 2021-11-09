@@ -19,7 +19,7 @@ router.get('/api/products', (req, res) => {
 router.get('/api/product/:id', (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
-  Post.findAll({
+  Product.findOne({
     where: {
       id: req.params.id
     },
@@ -65,6 +65,13 @@ router.post('/api/product', (req, res) => {
 // update product
 router.put('/api/product/:id', (req, res) => {
   // update product data
+  // {
+  //   "product_name": "Blankets",
+  //   "price": 10,
+  //   "stock": 79,
+  //   "category_id": 4,
+  //   "tagIds": [4]
+  // }
   Product.update(req.body, {
     where: {
       id: req.params.id,
@@ -108,7 +115,7 @@ router.put('/api/product/:id', (req, res) => {
     });
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/api/product/:id', (req, res) => {
   // delete one product by its `id` value
   Product.destroy({
     where: {

@@ -21,8 +21,7 @@ router.get('/api/category/:id', (req, res) => {
     where: {
       id: req.params.id
     },
-    include:
-      [Product]
+    include: [Product]
   }).then((Category) => {
     res.json(Category);
   });
@@ -31,10 +30,7 @@ router.get('/api/category/:id', (req, res) => {
 router.post('/api/category', (req, res) => {
   // create a new category
   Category.create({
-    where: {
-      id: req.body.id,
       category_name: req.body.category_name
-    }
   }).then(Category => {
     res.json(Category);
   });
@@ -42,17 +38,29 @@ router.post('/api/category', (req, res) => {
 
 router.put('/api/category/:id', (req, res) => {
   // update a category by its `id` value
+
   Category.update({
+    category_name: req.body.category_name
+  },
+  {
     where: {
       id: req.params.id
     }
-  }).then(Category => {
+  }
+  ).then(Category => {
     res.json(Category);
   });
 });
 
 router.delete('/api/category/:id', (req, res) => {
   // delete a category by its `id` value
+  Category.destroy({
+    where: {
+      id: req.params.id
+    }
+  }).then(Category => {
+    res.json(Category);
+  });
 });
 
 module.exports = router;
